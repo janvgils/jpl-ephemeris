@@ -1,2 +1,2 @@
 # jpl-ephemeris
-Get from Ephemeris Jet Propulsion Laboratory (JPL)
+Get Ephemeris from Jet Propulsion Laboratory (JPL)
