@@ -94,7 +94,7 @@ The objects.lst file contains a list of spacecraft and their JPL ID's:
 On executing the get.sh script, output files will be built as follows; these can then be directly accessed by your tracking software to point your antenna at DSN objects.
 
 
-![image](https://user-images.githubusercontent.com/21240133/147609014-719d6ed0-93eb-44ba-9200-082a08a0c20f.png)
+<img src="images/jpl-output-example.png" alt="Output example">
 
 
 If you update or simplify this script to make getting JPL Ephemeris data great again, please let me know. 
