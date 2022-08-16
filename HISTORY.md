@@ -1,6 +1,6 @@
-Written by PJM on 25 January 2018
+### Written by PJM on 25 January 2018
 
-A script was needed to get ephemeris data on a daily basis from JPL and to write the data out in individual files. 
+A script was needed to get ephemeris data on a daily basis from JPL and to write the data out in individual files.
 In the good old days, one would visit https://ssd.jpl.nasa.gov/horizons.cgi and manually enter the required data to save out the file containing pointing data.
 The following was script was written and runs on a Raspberry PI. Make a directory called /home/pi/ephemeris which is where all the scripts / data will reside.
 Ideally you will want to share this over the LAN via a SMB share, so your F1EHN tracker can pick up the ephemeris data.
@@ -21,7 +21,7 @@ chmod 666 $file
 rm /home/pi/ephemeris/tempeph.txt
 ```
 
-The coord line should be modified with your lat/long/height info in decimal, for example SITE_COORD='3.123,52.525,100.9998'. 
+The coord line should be modified with your lat/long/height info in decimal, for example SITE_COORD='3.123,52.525,100.9998'.
 Put the above script into a file called jplget.sh and chmod +x it to make it executable. Make another file called get.sh and put the following into it.
 
 ```
@@ -97,5 +97,5 @@ On executing the get.sh script, output files will be built as follows; these can
 <img src="images/jpl-output-example.png" alt="Output example">
 
 
-If you update or simplify this script to make getting JPL Ephemeris data great again, please let me know. 
+If you update or simplify this script to make getting JPL Ephemeris data great again, please let me know.
 If you want to run this on Mac OSX you will need to install "coreutils" which you can do with HomeBrew followed by "brew install coreutils".
